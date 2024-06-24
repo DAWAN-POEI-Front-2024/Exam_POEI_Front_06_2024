@@ -1,0 +1,122 @@
+
+header {
+    background-color: rgb(186, 186, 240);
+    color: rgb(35, 31, 31);
+    text-align: center;
+    padding: 0.5em 0;
+    border-radius: 10px; 
+    border:3px solid rgb(146, 146, 193); 
+    margin: 0 20px;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-around; 
+    background-color: rgb(186, 186, 240);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border:3px solid rgb(146, 146, 193); 
+}
+
+#editor {
+    width: 60%; 
+}
+
+#chapters {
+    width: 20%;
+}
+#notes {
+    width: 100%; 
+    order: -1;
+    height: 300px;
+    border:3px solid rgb(48, 48, 53); 
+    border-radius: 10px;  
+}
+
+li {
+    width: 45%;
+    background-color: #f0f0f0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: start;
+    margin-bottom: 10px;
+    padding: 10px;
+    border:4px solid rgb(146, 146, 193); 
+    border-radius: 10px;
+    flex-basis: calc(50% - 10px); 
+    box-sizing: border-box;
+    text-align: center;
+}
+
+
+
+
+
+h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border:3px solid rgb(48, 48, 53); 
+    border-radius: 10px;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #fcfcfc;
+    color: rgb(29, 26, 26);
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100%;
+    border:3px solid rgb(48, 48, 53);
+    border-radius: 10px;
+}
+
+cite {
+    margin-left: auto; 
+    font-style: normal;
+    color: rgb(41, 39, 39);
+    text-align: center;
+    
+}
+
+body {
+    background-color: #d8d0d0; 
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column; 
+    }
+    
+    #editor{
+        width: 100%; 
+    }
+    #chapters{
+        width: 100%;
+        order: -1;
+    }
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    cite {
+        width: calc(50% - 5px);
+        margin-bottom: 10px;
+    }
+}
