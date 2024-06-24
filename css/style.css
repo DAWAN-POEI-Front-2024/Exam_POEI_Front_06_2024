@@ -1,4 +1,54 @@
 body {
-    margin: 0;
-    background-color: lightgray;
+  margin: 0;
+  background-color: lightgray;
+
+  header {
+    background-color: #d4d4fa;
+    border: 2px solid #9292c1;
+    border-radius: 10px;
+    text-align: center;
+    width: 80%;
+    margin: 0px auto 10vh auto;
+  }
+
+  main {
+    background-color: #d4d4fa;
+    border: 2px solid #9292c1;
+    border-radius: 10px;
+    width: 80%;
+    margin: auto;
+  }
+
+  #editor {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50%;
+    border-color: black;
+  }
+
+  #chapters {
+    display: inline-block;
+    width: 30%;
+  }
+
+  #notes {
+    border-radius: 10px;
+  }
+
+  #note_title {
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  #save_note_btn {
+    border-radius: 10px;
+  }
+
+  @media (max-width: 767px) {
+    .body {
+      flex-direction: column;
+      padding: 10px;
+    }
+  }
 }
