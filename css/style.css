@@ -1,4 +1,97 @@
 body {
-    margin: 0;
-    background-color: lightgray;
+    margin: 0 auto;
+    background-color: rgb(185, 185, 185);
+    max-width: 968px;
+    width: 95%;
+}
+
+header {
+    width: 100%;
+    padding: 15px auto;
+    background-color: rgb(79, 186, 228);
+    border: solid 5px #214779;
+    border-radius: 15px;
+    margin: 0 auto 50px -5px;
+}
+
+h1 {
+    font-size: 30px;
+    text-align: center;
+}
+
+main {
+    margin: 0 auto auto -5px;
+    width: 100%;
+    padding: 15px auto;
+    background-color: rgb(79, 186, 228);
+    border: solid 5px #214779;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 10px;
+    width: 70%;
+}
+
+#editor input, #editor textarea, #editor button {
+    border: solid 5px #011835;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    height: 35px;
+}
+
+#editor textarea {
+    height: 300px;
+}
+
+section#chapters {
+    align-items: center;
+    width: 30%;
+}
+
+
+section#chapters ul li {
+    text-decoration: none;
+    list-style: none;
+    border: solid 5px #011835;
+    border-radius: 25px;
+    margin-bottom: 5px;
+    background-color: #fff;
+    padding: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: large;
+    }
+
+    main {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    section {
+        width: 90%;
+    }
+
+    section#chapters {
+        width: 75%;
+    }
+    section#chapters ul li {
+        width: 35%;
+        margin: 5px auto;
+    }
+
+    section#chapters ul {
+        padding: 0;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+    }
 }
