@@ -1,4 +1,58 @@
-body {
+/* body {
     margin: 0;
     background-color: lightgray;
+} */
+body {
+  margin: 0;
+  background-color: lightgray;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #b0c4de;
+  padding: 20px;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+#editor, #chapters {
+  background-color: #e6e6fa;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+#editor {
+  flex-grow: 2;
+}
+
+#chapters {
+  max-width: 200px;
+}
+
+input#note_title, textarea#notes {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button#save_note_btn {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #b0c4de;
+  cursor: pointer;
+}
+
+button#save_note_btn:hover {
+  background-color: #a0b4cc;
 }

@@ -9,7 +9,7 @@
 
 </head>
 <body>
-    
+
     <!-- bloc à ne pas modifier -->
     <header>
         <h1>Mon bloc note</h1>
@@ -20,7 +20,7 @@
         <section id="editor">
             <input type="text" id="note_title" placeholder="Titre">
 
-            <textarea name="notes" id="notes"></textarea>
+            <textarea name="notes" id="notes" placeholder="Votre note ici..."></textarea>
 
             <button id="save_note_btn">Sauvegarder</button>
         </section>
@@ -28,15 +28,16 @@
 
         <section id="chapters">
             <h2>Notes</h2>
-            <ul>
+            <ul id="notes_list">
                 <li>Titre - 1 <cite>date</cite></li>
                 <li>Titre - 2 <cite>date</cite></li>
                 <li>Titre - 3 <cite>date</cite></li>
                 <li>Titre - 4 <cite>date</cite></li>
             </ul>
         </section>
-        
+
     </main>
+    <script src="js/script.js"></script>
 
 </body>
 </html>
