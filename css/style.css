@@ -100,6 +100,9 @@ section {
         order: 1; 
     }
 
+    #title-note {
+        text-align: center;
+    }
 
     #chapters ul {
         display: flex;
