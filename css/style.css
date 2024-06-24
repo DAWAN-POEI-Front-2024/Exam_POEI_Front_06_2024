@@ -2,3 +2,78 @@ body {
     margin: 0;
     background-color: lightgray;
 }
+
+h1 {
+    background-color: rgb(207, 195, 252);
+    padding: 10px;
+    border: solid 4px rgb(171, 149, 250);
+    margin: 0;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 10px;
+}
+
+main {
+    margin-top: 100px;
+    background-color: rgb(207, 195, 252);
+    border: solid 4px rgb(171, 149, 250);
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#editor {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#note_title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: solid 3px black;
+    border-radius: 8px;
+}
+
+#notes {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    min-height: 400px;
+    border: solid 3px black;
+    border-radius: 8px;
+}
+
+#save_note_btn {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: solid 3px black;
+    border-radius: 8px;
+}
+
+#chapters {
+    width: 30%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    background-color: white;
+    border: solid 4px rgb(171, 149, 250);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+    margin: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top-left-radius: 50px 20px ;
+    border-top-right-radius: 50px 20px ;
+    border-bottom-right-radius: 50px 20px ;
+    border-bottom-left-radius: 50px 20px ;
+}
