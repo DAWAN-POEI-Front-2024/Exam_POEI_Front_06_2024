@@ -88,7 +88,25 @@ h1 {
     box-sizing: border-box;
     background-color:lightblue;
 }
+div {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex-basis: calc(50% - 10px); 
+    box-sizing: border-box;
+}
 @media (max-width: 767px) {
+    div {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+    div {
+        width: calc(50% - 5px); /* Adjusted to fit two items per row */
+        margin-bottom: 10px;
+    }
     .rounded-border {
         flex-direction: column-reverse; 
     }
