@@ -52,6 +52,7 @@ main {
     margin-bottom: 10px;
     border: solid 3px black;
     border-radius: 8px;
+    cursor: pointer;
 }
 
 #chapters {
@@ -60,22 +61,72 @@ main {
 
 ul {
     list-style-type: none;
+    padding: 0;
 }
 
 li {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border: solid 3px black;
+    border-radius: 8px;
+    margin-left: 10px;
+}
+
+.item {
+    cursor: pointer;
     background-color: white;
     border: solid 4px rgb(171, 149, 250);
     margin-top: 10px;
     margin-bottom: 10px;
     text-align: center;
     font-weight: bold;
-    margin: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
     padding-top: 20px;
     padding-bottom: 20px;
     border-top-left-radius: 50px 20px ;
     border-top-right-radius: 50px 20px ;
     border-bottom-right-radius: 50px 20px ;
     border-bottom-left-radius: 50px 20px ;
+    min-width: 130px;
+}
+
+.delete_btn {
+    cursor: pointer;
+    height: 40px;
+    background-color: white;
+    border: solid 3px black;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+
+}
+
+#resetLocalStorage {
+    background-color: white;
+    border: solid 3px black;
+    border-radius: 5px;
+}
+
+#noteList {
+    width: 80%;
+}
+
+.noteListItem {
+    margin-left: 10%;
+    border-bottom: solid 3px black;
+    width: 100%;
 }
 
 @media screen and (max-width: 576px) {
@@ -112,10 +163,16 @@ li {
     }
 
     li {
-        width: 40%;
+        /* width: 40%; */
         padding: 0;
         margin: 0;
         margin-top: 5px;
         margin-bottom: 5px;
+    }
+
+    .item {
+        /* width: 70%; */
+        min-width: none;
+        padding: 0;
     }
   }
