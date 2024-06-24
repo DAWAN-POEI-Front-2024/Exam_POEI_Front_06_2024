@@ -2,3 +2,84 @@ body {
     margin: 0;
     background-color: lightgray;
 }
+
+header {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 10px;
+    border-bottom: 2px solid #ffffff;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+#editor, #chapters {
+    background-color: #5f5f5f;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 45%;
+}
+
+#editor input, #editor textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+}
+
+#editor button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #3b3b3b;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#editor button:hover {
+    background-color: #ffffff;
+}
+
+#chapters ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#chapters li {
+    background-color: #ffffff;
+    padding: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 0;
+    }
+
+    #editor, #chapters {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    header {
+        padding: 15px;
+    }
+
+    #editor input, #editor textarea {
+        margin: 5px 0;
+    }
+
+    #editor button {
+        margin-top: 5px;
+    }
+}
