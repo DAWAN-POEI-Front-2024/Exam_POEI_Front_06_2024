@@ -90,6 +90,6 @@ h1 {
 }
 @media (max-width: 767px) {
     .rounded-border {
-        flex-direction: column-reverse; /* Inverser l'ordre des sections en dessous de 768px */
+        flex-direction: column-reverse; 
     }
 }

@@ -7,6 +7,7 @@
     <title>Mon Bloc-notes</title>
 
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
 
 </head>
 
@@ -24,10 +25,12 @@
                 <input type="text" id="note_title" class="bordurarondie" placeholder="Titre">
                 <textarea name="notes" id="notes" class="bordurarondie"></textarea>
                 <button id="save_note_btn" class="bordurarondie">Sauvegarder</button>
+                <button id="clear_storage_btn" class="bordurarondie">Effacer tout</button>
             </section>
             <section id="chapters" class="notes-section">
                 <h2>Notes</h2>
-                <div class="notes-grid">
+                <button class="note-item"><a href="liste note.html" target="_self" title="liste des notes">Liste de note</a></button>
+                <div id="notes_list" class="notes-grid">
                     <div class="note-item">Titre - 1 <cite>date</cite></div>
                     <div class="note-item">Titre - 2 <cite>date</cite></div>
                     <div class="note-item">Titre - 3 <cite>date</cite></div>

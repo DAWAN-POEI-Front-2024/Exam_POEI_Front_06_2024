@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.main-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.rounded-border {
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+#notes-list {
+    text-align: center;
+}
+
+.notes-grid {
+    list-style-type: none;
+    padding: 0;
+}
+
+.note-item {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+}
+
+.note-item cite {
+    font-style: italic;
+}
+
+.index-link {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 8px 16px;
+    background-color:#f9f9f9;
+    color: black;
+    text-decoration: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+h1 {
+    display: block; 
+    border: 3px solid rgb(146, 146, 193);
+    border-radius: 20px;
+    padding: 10px 20px;
+    background-color: #fff;
+    text-align: center;
+    width: 80%; 
+    margin: 0 auto; 
+    box-sizing: border-box;
+    background-color:lightblue;
+}
