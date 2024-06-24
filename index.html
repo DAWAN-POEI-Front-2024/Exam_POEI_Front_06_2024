@@ -1,42 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon Bloc-notes</title>
-
+    <script defer src="js/main.js"></script>
     <link rel="stylesheet" href="css/style.css">
 
 </head>
+
 <body>
-    
+
     <!-- bloc à ne pas modifier -->
     <header>
         <h1>Mon bloc note</h1>
     </header>
     <!-- bloc à ne pas modifier -->
 
-    <main>
-        <section id="editor">
-            <input type="text" id="note_title" placeholder="Titre">
+    <main class="container">
+        <div class="container2">
+            <section id="editor">
+                <input type="text" name="title" id="note_title" placeholder="Titre">
 
-            <textarea name="notes" id="notes"></textarea>
+                <textarea name="notes" id="notes"></textarea>
 
-            <button id="save_note_btn">Sauvegarder</button>
-        </section>
+                <button id="save_note_btn">Sauvegarder</button>
+                <button id="delete_btn">Vider Local Storage</button>
+            </section>
 
 
-        <section id="chapters">
-            <h2>Notes</h2>
-            <ul>
-                <li>Titre - 1 <cite>date</cite></li>
-                <li>Titre - 2 <cite>date</cite></li>
-                <li>Titre - 3 <cite>date</cite></li>
-                <li>Titre - 4 <cite>date</cite></li>
-            </ul>
-        </section>
-        
+            <section id="chapters">
+                <h2>Notes</h2>
+                <ul>
+
+                </ul>
+            </section>
+        </div>
+
     </main>
 
 </body>
+
 </html>
