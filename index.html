@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,35 +9,39 @@
     <link rel="stylesheet" href="css/style.css">
 
 </head>
+
 <body>
-    
+
     <!-- bloc à ne pas modifier -->
     <header>
         <h1>Mon bloc note</h1>
     </header>
     <!-- bloc à ne pas modifier -->
 
-    <main>
-        <section id="editor">
-            <input type="text" id="note_title" placeholder="Titre">
+    <main class="main-container">
+        <section id="editor-chapters" class="rounded-border">
+            <section id="editor" >
+                <input type="text" id="note_title" class="bordurarondie" placeholder="Titre">
 
-            <textarea name="notes" id="notes"></textarea>
+                <textarea name="notes" id="notes" class="bordurarondie"></textarea>
 
-            <button id="save_note_btn">Sauvegarder</button>
+                <button id="save_note_btn" class="bordurarondie">Sauvegarder</button>
+            </section>
+            <section id="chapters" class=" notes-section">
+                <h2>Notes</h2>
+                <div class="notes-list">
+                    <div class="note-item">Titre - 1 <cite>date</cite></div>
+                    <div class="note-item">Titre - 2 <cite>date</cite></div>
+                    <div class="note-item">Titre - 3 <cite>date</cite></div>
+                    <div class="note-item">Titre - 4 <cite>date</cite></div>
+                </div>
+            </section>
         </section>
 
-
-        <section id="chapters">
-            <h2>Notes</h2>
-            <ul>
-                <li>Titre - 1 <cite>date</cite></li>
-                <li>Titre - 2 <cite>date</cite></li>
-                <li>Titre - 3 <cite>date</cite></li>
-                <li>Titre - 4 <cite>date</cite></li>
-            </ul>
-        </section>
-        
     </main>
+    <script>
 
+    </script>
 </body>
+
 </html>

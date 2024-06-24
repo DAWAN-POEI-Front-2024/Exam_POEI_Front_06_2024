@@ -1,4 +1,90 @@
 body {
     margin: 0;
     background-color: lightgray;
+    font-family: Arial, sans-serif;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh; 
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.rounded-border {
+    border: 3px solid rgb(146, 146, 193);
+    border-radius: 20px;
+    padding: 20px;
+    background-color: lightgray;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    width: 80%;
+}
+
+#editor {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#chapters {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.bordurarondie {
+    border: 2px solid #000;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: calc(100% - 24px);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#notes {
+    height: 300px;
+}
+
+h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.notes-list {
+    padding: 0;
+    margin: 0;
+}
+
+.note-item {
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+}
+
+cite {
+    font-style: italic;
+}
+
+h1 {
+    display: block; 
+    border: 3px solid rgb(146, 146, 193);
+    border-radius: 20px;
+    padding: 10px 20px;
+    background-color: #fff;
+    text-align: center;
+    width: 80%; 
+    margin: 0 auto; 
+    box-sizing: border-box;
+    background-color: lightgray;
 }
