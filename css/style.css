@@ -1,4 +1,118 @@
+:root {
+    --primary: #e1e5fe;
+    --secondary: #999de0;
+}
+
 body {
     margin: 0;
     background-color: lightgray;
+    margin: 0px 10px;
+}
+
+header,
+main {
+    background-color: var(--primary);
+    border: 2px solid var(--secondary);
+    border-radius: 10px;
+    margin: 0 auto;
+    max-width: 1000px;
+    margin-bottom: 50px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+h1 {
+    margin: 0.5rem;
+    font-size: 1.5rem;
+}
+
+h2 {
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+#editor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 300px;
+    gap: 10px;
+}
+
+input,
+textarea,
+button {
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 2px;
+    background-color: white;
+}
+
+input {
+    text-align: center;
+}
+
+textarea {
+    height: 200px;
+}
+
+ul {
+    width: 300px;
+    margin: 0 auto;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+ul>li {
+    background-color: white;
+    padding: 2px;
+    border-radius: 50px / 20%;
+    border: 2px solid var(--secondary);
+    margin-bottom: 5px;
+    text-wrap: wrap;
+}
+
+
+@media screen and (min-width: 768px) {
+    main {
+        flex-direction: row;
+    }
+
+    h2 {
+        text-align: left;
+    }
+
+    #editor {
+        width: 60%;
+    }
+
+    #chapters {
+        width: 30%;
+    }
+
+    ul {
+        flex-direction: column;
+        gap: 5px;
+        padding: 5px;
+       
+    }
+
+    ul > li {
+        width: auto;
+
+    }
 }

@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon Bloc-notes</title>
 
     <link rel="stylesheet" href="css/style.css">
-
+    <script type="module" src="js/script.js"></script>
 </head>
+
 <body>
-    
+
     <!-- bloc à ne pas modifier -->
     <header>
         <h1>Mon bloc note</h1>
@@ -18,11 +20,12 @@
 
     <main>
         <section id="editor">
-            <input type="text" id="note_title" placeholder="Titre">
+                <input type="text" id="note_title" placeholder="Titre">
 
-            <textarea name="notes" id="notes"></textarea>
+                <textarea name="notes" id="notes"></textarea>
 
-            <button id="save_note_btn">Sauvegarder</button>
+                <button id="save_note_btn" type="submit">Sauvegarder</button>
+
         </section>
 
 
@@ -35,8 +38,9 @@
                 <li>Titre - 4 <cite>date</cite></li>
             </ul>
         </section>
-        
+
     </main>
 
 </body>
+
 </html>
