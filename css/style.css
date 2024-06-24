@@ -2,3 +2,43 @@ body {
     margin: 0;
     background-color: lightgray;
 }
+
+header {
+    text-align: center;
+    background-color: #d4d4fa;
+    border: 3px solid #9f9fc6;
+    border-radius: 10px;
+}
+
+textarea{
+    width:  96%;
+    height: 400px;
+    text-align: center;
+    border: 3px solid black;
+    border-radius: 5px;
+}
+
+.bloc {
+    text-align: center;
+    background-color: #d4d4fa;
+    border: 3px solid #9f9fc6;
+    border-radius: 10px;
+    margin: 40px;
+}
+
+.note{
+    background-color: white;
+    border: 3px solid #9f9fc6;
+    border-radius: 40%;
+    margin: 10px;
+    width: fit-content;
+    padding: 10px;
+    list-style-type: none;
+}
+
+.formstyle {
+    text-align: center;
+    border: 3px solid black;
+    border-radius: 5px;
+    margin: 10px;
+}
