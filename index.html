@@ -1,42 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mon Bloc-notes</title>
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/style.css" />
 
-</head>
-<body>
-    
-    <!-- bloc à ne pas modifier -->
-    <header>
-        <h1>Mon bloc note</h1>
+    <script src="./js/index.js" type="module" defer></script>
+  </head>
+  <body class="container">
+    <header class="bg-card">
+      <h1>Mon bloc note</h1>
     </header>
-    <!-- bloc à ne pas modifier -->
-
-    <main>
-        <section id="editor">
-            <input type="text" id="note_title" placeholder="Titre">
-
-            <textarea name="notes" id="notes"></textarea>
-
-            <button id="save_note_btn">Sauvegarder</button>
-        </section>
-
-
-        <section id="chapters">
-            <h2>Notes</h2>
-            <ul>
-                <li>Titre - 1 <cite>date</cite></li>
-                <li>Titre - 2 <cite>date</cite></li>
-                <li>Titre - 3 <cite>date</cite></li>
-                <li>Titre - 4 <cite>date</cite></li>
-            </ul>
-        </section>
-        
+    <main class="bg-card">
+      <section class="editor-section" id="editor">
+        <form class="editor__form" id="editor-form">
+          <input
+            class="editor__title"
+            type="text"
+            id="note-title"
+            name="title"
+            placeholder="Titre"
+          />
+          <textarea
+            class="editor__content"
+            id="note-content"
+            name="content"
+          ></textarea>
+          <button
+            class="button button-primary"
+            id="save-note-btn"
+            type="submit"
+          >
+            Sauvegarder
+          </button>
+          <button
+            class="button button-destructive"
+            id="reset-note-btn"
+            type="reset"
+          >
+            Reset
+          </button>
+        </form>
+      </section>
+      <section class="notes-section" id="chapters">
+        <h2 class="notes__title">Notes</h2>
+        <a href="./pages/notes-list.html" class="button button-primary"
+          >Détails</a
+        >
+        <ul class="notes__list" id="notes-list"></ul>
+      </section>
     </main>
-
-</body>
+  </body>
 </html>

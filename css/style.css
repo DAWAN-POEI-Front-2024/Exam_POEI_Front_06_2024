@@ -1,4 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --clr-primary: hsl(17, 96%, 59%);
+  --clr-secondary: hsl(243, 66%, 53%);
+  --clr-accent: hsl(249, 91%, 17%);
+  --clr-bg: hsl(0, 0%, 83%);
+  --clr-text: hsl(0, 0%, 100%);
+
+  --ff-default: "Inter", sans-serif;
+
+  --fw-400: 400;
+  --fw-700: 700;
+
+  --fs-100: 1rem;
+  --fs-200: 1.2rem;
+  --fs-300: 1.3rem;
+  --fs-400: 1rem;
+  --fs-500: 1.6rem;
+  --fs-600: 1.8rem;
+  --fs-700: 2rem;
+  --fs-800: 2.4rem;
+  --fs-900: 2.8rem;
+}
+
 body {
-    margin: 0;
-    background-color: lightgray;
+  display: grid;
+  align-items: center;
+  gap: 1rem;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+
+  font-family: var(--ff-default);
+  font-size: var(--fs-300);
+  font-weight: var(--fw-400);
+  color: var(--clr-text);
+  line-height: 1.6;
+
+  background-color: var(--clr-bg);
+  overflow-x: hidden;
+}
+
+/* ===== Utility classes ===== */
+.container {
+  --max-width: 1200px;
+  --padding: 1rem;
+
+  width: 90%;
+  max-width: var(--max-width);
+  margin-inline: auto;
+  padding: var(--padding);
+}
+
+.bg-card {
+  background-color: var(--clr-secondary);
+  border: 2px solid var(--clr-accent);
+  border-radius: 8px;
+}
+
+.note-card {
+  font-size: var(--fs-100);
+  background-color: var(--clr-accent);
+  padding: 0.4rem;
+
+  border: 2px solid var(--clr-accent);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.button {
+  font-size: var(--fs-200);
+  padding: 0.4rem 1rem;
+  border: none;
+  border-radius: 8px;
+  color: var(--clr-text);
+  cursor: pointer;
+}
+
+.button.button-primary {
+  background-color: var(--clr-primary);
+}
+
+.button.button-secondary {
+  background-color: var(--clr-accent);
+}
+
+.button.button-destructive {
+  background-color: #d12828;
+}
+
+.button.button-primary:hover,
+.button.button-secondary:hover,
+.button.button-destructive:hover {
+  filter: brightness(1.1);
+}
+
+/* ===== Global styling ===== */
+section {
+  padding: 0.4rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ===== Header ===== */
+header {
+  align-self: self-start;
+  text-align: center;
+}
+
+header h1 {
+  font-size: var(--fs-800);
+}
+
+/* ===== Sections ===== */
+main {
+  display: grid;
+  grid-template-areas:
+    "notes"
+    "editor";
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  main {
+    grid-template-areas: "editor notes";
+    align-items: center;
+    padding-block: 2rem;
+  }
+}
+
+/* Editor section */
+.editor-section {
+  grid-area: editor;
+}
+
+.editor__form {
+  display: grid;
+  gap: 1rem;
+}
+
+.editor__title {
+  padding-block: 0.4rem;
+  border-radius: 8px;
+  border: none;
+}
+
+.editor__content {
+  min-height: 100px;
+  padding: 0.4rem;
+  border: 2px solid var(--clr-accent);
+  border-radius: 8px;
+}
+
+/* Notes section */
+.notes-section {
+  grid-area: notes;
+  text-align: center;
+}
+
+.notes__title {
+  margin-bottom: 1rem;
+}
+
+.notes__list {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.notes__item button {
+  margin: 1rem;
+}
+
+@media (min-width: 768px) {
+  .notes-section {
+    text-align: left;
+  }
+
+  .notes__list {
+    flex-direction: column;
+    width: fit-content;
+    margin: auto;
+  }
+
+  .notes__item {
+    width: fit-content;
+  }
+}
+
+/* Notes list page */
+main.details {
+  grid-template-areas: "notes";
+  place-items: unset;
+}
+
+.notes-details a {
+  display: block;
+  width: fit-content;
+  margin: 1rem auto;
+}
+
+.details .notes__list,
+.notes__item {
+  width: 100%;
+}
+
+.notes-details .notes__title {
+  text-align: center;
+  margin-block: 1rem;
+}
+
+.details .notes__item button {
+  margin: 1rem 1rem 1rem 0;
 }
