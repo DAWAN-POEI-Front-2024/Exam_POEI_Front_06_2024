@@ -77,3 +77,45 @@ li {
     border-bottom-right-radius: 50px 20px ;
     border-bottom-left-radius: 50px 20px ;
 }
+
+@media screen and (max-width: 576px) {
+    main {
+        flex-direction: column-reverse;
+    }
+
+    #editor {
+        width: 80%;
+        margin: auto;
+    }
+
+    #notes {
+        min-height: 300px;
+        margin: 0;
+    }
+
+    #chapters {
+        width: 80%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 0;
+    }
+
+    li {
+        width: 40%;
+        padding: 0;
+        margin: 0;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+  }
