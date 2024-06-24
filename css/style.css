@@ -1,4 +1,98 @@
 body {
-    margin: 0;
-    background-color: lightgray;
+    background-color: #d3d3d3; /* Couleur page */
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #e6e6fa; /* header fond bleu clair */
+    padding: 10px;
+    border: 1px solid #000; 
+    border-radius: 10px;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#editor {
+    flex: 1;
+    margin-right: 20px;
+    background-color: #e6e6fa; /* Couleur boîte principale */
+    padding: 20px;
+    border: 1px solid #000; /* Bordure boîte principale */
+    border-radius: 10px;
+    min-height: 500px; /* Ajuster la hauteur min de la boîte principale */
+}
+
+#note_title, #notes {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #000; /* Bordure des champs */
+    border-radius: 10px;
+    font-size: 16px; /* Ajuster la taille de police si nécessaire */
+}
+
+#save_note_btn, .reset-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #ffffff; /* fond boutons blanc */
+    color: #000; 
+    text-align: center;
+    border: 1px solid #000; /* Bordure noire */
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-size: 16px; 
+}
+
+#chapters {
+    flex: 0.5;
+    background-color: #e6e6fa; 
+    padding: 20px;
+    border: 1px solid #000; /* Bordure de la liste de notes */
+    border-radius: 10px;
+}
+
+#chapters ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#chapters li {
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #000; /* Bordure des éléments dans note */
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    #editor {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    #chapters {
+        flex: 1;
+    }
+
+    #chapters ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #chapters li {
+        flex: 1 1 45%;
+        margin: 5px;
+    }
 }

@@ -1,42 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Bloc-notes</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mon Bloc-notes</title>
 
-    <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style.css">
 
-</head>
-<body>
-    
-    <!-- bloc à ne pas modifier -->
-    <header>
-        <h1>Mon bloc note</h1>
-    </header>
-    <!-- bloc à ne pas modifier -->
+    </head>
+    <body>
 
-    <main>
-        <section id="editor">
-            <input type="text" id="note_title" placeholder="Titre">
+        <!-- bloc à ne pas modifier -->
+        <header>
+            <h1>Mon bloc note</h1>
+        </header>
+        <!-- bloc à ne pas modifier -->
 
-            <textarea name="notes" id="notes"></textarea>
+        <main>
+            <section id="editor">
+                <input type="text" id="note_title" placeholder="Titre">
+                <textarea name="notes" id="notes"></textarea>
+                <button id="save_note_btn"
+                    onclick="saveNote()">Sauvegarder</button>
+                <button class="reset-button" onclick="resetStorage()">Remise à
+                    zéro</button>
+            </section>
 
-            <button id="save_note_btn">Sauvegarder</button>
-        </section>
+            <section id="chapters">
+                <h2>Notes</h2>
+                <ul class="notes-list">
+                    <li>Titre - 1 <cite>date</cite></li>
+                    <li>Titre - 2 <cite>date</cite></li>
+                    <li>Titre - 3 <cite>date</cite></li>
+                    <li>Titre - 4 <cite>date</cite></li>
+                </ul>
+            </section>
+        </main>
 
+        <script src="script.js"></script>
 
-        <section id="chapters">
-            <h2>Notes</h2>
-            <ul>
-                <li>Titre - 1 <cite>date</cite></li>
-                <li>Titre - 2 <cite>date</cite></li>
-                <li>Titre - 3 <cite>date</cite></li>
-                <li>Titre - 4 <cite>date</cite></li>
-            </ul>
-        </section>
-        
-    </main>
-
-</body>
+    </body>
 </html>
+

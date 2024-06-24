@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste des Notes</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">Liste des Notes</div>
+        <div class="notes-list">
+            <!-- Les notes chargent ici -->
+        </div>
+    </div>
+
+    <script>
+        // Charger mes notes
+        function loadAllNotes() {
+            let notes = JSON.parse(localStorage.getItem('notes')) || [];
+            let notesList = document.querySelector('.notes-list');
+            notesList.innerHTML = '';
+            notes.forEach(note => {
+                notesList.innerHTML += `<div class="note-item">${note.title} <span class="date">${note.date}</span></div>`;
+            });
+        }
+
+        // Charger toutes mes notes en arrivant dessus
+        window.onload = loadAllNotes;
+    </script>
+</body>
+</html>
