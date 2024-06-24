@@ -1,4 +1,172 @@
 body {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: flex-start; 
+    min-height: 100vh; 
     margin: 0;
-    background-color: lightgray;
+    background-color: #f0f5f9; 
+    font-family: Arial, sans-serif; 
 }
+
+header {
+    background-color: #c3daef;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%; 
+    max-width: 65%; 
+    font-size: 12px; 
+    margin-bottom: 8rem;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #c3daef;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 65%;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; 
+}
+.custom-editor {
+    padding: 20px;
+}
+
+.custom-editor input[type="text"],
+.custom-editor textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.custom-editor textarea.large-textarea {
+    height: 85%; 
+    resize: vertical; 
+}
+
+.custom-editor button {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 2px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: rgb(7, 7, 7);
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.custom-editor button:hover {
+    background-color: #6199d4;
+}
+
+#editor {
+    flex: 1; 
+    margin-right: 20px; 
+}
+
+#chapters {
+    flex: 1; 
+    padding: 10px;
+}
+
+.editor-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.editor-inputs {
+    width: 60%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.notes-list {
+    width: 35%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.note {
+    padding: 10px;
+    margin-left: 4rem; 
+}
+
+.note h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.note ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.note ul li {
+    margin-bottom: 8px;
+}
+
+.note ul li {
+    background-color: white; 
+    border: 4px solid #ccc; 
+    border-radius: 6rem; 
+    padding: 1.5rem;
+    margin-bottom: 15px;
+    width: fit-content;
+    font-size: 16px;
+     
+}
+
+.note ul li cite {
+    font-style: normal; 
+}
+
+.note .elements {
+    float: right; 
+    width: 70%; 
+}
+
+input[type="text"],
+textarea {
+    width: 97%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #ffffff; 
+    color: rgb(5, 5, 5);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%; 
+}
+
+button:hover {
+    background-color: #a9c3d0;
+}
+

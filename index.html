@@ -16,27 +16,33 @@
     </header>
     <!-- bloc à ne pas modifier -->
 
+<div class="main-container">
     <main>
-        <section id="editor">
+        <section id="editor" class="custom-editor">
             <input type="text" id="note_title" placeholder="Titre">
-
-            <textarea name="notes" id="notes"></textarea>
-
+            <textarea name="notes" id="notes" class="large-textarea"></textarea>
             <button id="save_note_btn">Sauvegarder</button>
         </section>
 
 
         <section id="chapters">
+         <div class="note">
             <h2>Notes</h2>
-            <ul>
+         <div class="elements">
+            <ul id="notes_list">
                 <li>Titre - 1 <cite>date</cite></li>
                 <li>Titre - 2 <cite>date</cite></li>
                 <li>Titre - 3 <cite>date</cite></li>
                 <li>Titre - 4 <cite>date</cite></li>
+                
             </ul>
+        </div>
+        </div>
         </section>
         
     </main>
+</div>
+<script src="js/script.js"></script>
 
 </body>
 </html>
