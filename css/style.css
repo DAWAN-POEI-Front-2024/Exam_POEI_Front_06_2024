@@ -2,3 +2,115 @@ body {
     margin: 0;
     background-color: lightgray;
 }
+
+h1 {
+    text-align: center;
+    background-color: rgb(146, 146, 193);
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: rgb(146, 146, 193);
+    margin: 5%;
+}
+
+#editor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin-right: 20px;
+}
+
+#note_title,
+#notes,
+#save_note_btn {
+    width: 80%;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+#notes {
+    height: 200px;
+    resize: vertical;
+}
+
+#save_note_btn {
+    padding: 10px;
+    cursor: pointer;
+}
+
+#chapters {
+    width: 40%;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    background-color: #f0f0f0;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex-basis: calc(50% - 10px); 
+    box-sizing: border-box;
+}
+
+ul li cite {
+    font-style: normal;
+    color: #000000;
+    margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    #editor,
+    #chapters {
+        width: 90%;
+        margin-right: 0;
+    }
+
+    #note_title,
+    #notes,
+    #save_note_btn {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    #notes {
+        height: 150px;
+    }
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    ul li {
+        width: calc(50% - 5px); /* Adjusted to fit two items per row */
+        margin-bottom: 10px;
+    }
+
+    h1 {
+        margin-right: 25px;
+        margin-left: 25px;
+    }
+
+    h2 {
+        text-align: center;
+    }
+}
+
